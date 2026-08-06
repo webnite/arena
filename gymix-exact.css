@@ -4204,3 +4204,30 @@ body {
     font-size: 24px;
   }
 }
+
+/* Desktop pricing measure: keep horizontal cards readable instead of full-bleed. */
+.plans-grid {
+  width: min(900px, 100%);
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1051px) {
+  .plans-grid {
+    margin-top: 56px;
+  }
+
+  .plan-card > .plan-card__main,
+  .plan-card__main {
+    gap: 28px 42px;
+    padding: 34px 38px 32px;
+  }
+}
+
+@media (max-width: 820px) {
+  .plans-grid {
+    width: 100%;
+    max-width: none;
+  }
+}

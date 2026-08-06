@@ -1,6 +1,6 @@
 # Arena Training — site completo
 
-Landing page editorial criada com imagens, conteúdo e links obtidos na página oficial da Arena Training. A direção visual privilegia superfícies planas, tipografia contida, fotografia real e vermelho usado como sinal de ação, evitando brilhos, vidro e excesso de cards arredondados.
+Landing page editorial criada com imagens, conteúdo e links obtidos na página oficial da Arena Training. A direção visual privilegia superfícies planas, tipografia Satoshi, fotografia real e vermelho usado como sinal de ação, evitando brilhos, vidro e excesso de cards arredondados.
 
 ## Abrir
 

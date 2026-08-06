@@ -14,8 +14,8 @@
   --red-bright: #ff2a33;
   --red-deep: #bd1119;
   --yellow: #ffb800;
-  --heading: "Barlow Condensed", "Arial Narrow", sans-serif;
-  --body: Inter, Arial, sans-serif;
+  --heading: "Satoshi", Arial, sans-serif;
+  --body: "Satoshi", Arial, sans-serif;
   --shell: 1180px;
   --gutter: clamp(20px, 4vw, 48px);
   --section-space: clamp(86px, 9vw, 132px);
