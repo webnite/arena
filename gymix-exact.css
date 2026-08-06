@@ -4231,3 +4231,16 @@ body {
     max-width: none;
   }
 }
+
+/* Keep the featured mobile class card inside its own taller grid row. */
+@media (max-width: 560px) {
+  .class-grid {
+    grid-template-rows: 238px;
+    grid-auto-rows: 180px;
+  }
+}
+
+/* Gelo em cubo uses the same clean surface as the other amenities. */
+.amenity:nth-child(4) {
+  background: var(--gx-panel);
+}
