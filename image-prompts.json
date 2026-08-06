@@ -1,0 +1,52 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "mode": "separate generation call per asset",
+  "artDirection": "Editorial fitness photography, modern dark Brazilian gym, black equipment, restrained red practical lighting, realistic skin and fabric, vertical 4:5 composition, dark lower band reserved for interface copy, no text, logos or watermarks.",
+  "assets": [
+    {
+      "modality": "Musculação livre",
+      "file": "assets/images/classes/class-musculacao.png",
+      "prompt": "Photorealistic adult Brazilian woman performing a dumbbell shoulder press with correct form in a modern dark gym, authentic effort, restrained red LED lighting and a darker lower area for card copy."
+    },
+    {
+      "modality": "Spinning",
+      "file": "assets/images/classes/class-spinning.png",
+      "prompt": "Photorealistic adult Brazilian woman training on a stationary spin bike in a real group cycling setting, dynamic effort, dark gym and restrained red LED lighting."
+    },
+    {
+      "modality": "GAP",
+      "file": "assets/images/classes/class-gap.png",
+      "prompt": "Photorealistic adult Brazilian woman performing a kettlebell goblet squat with classmates behind her, correct posture, dark functional studio and red practical lights."
+    },
+    {
+      "modality": "Jump",
+      "file": "assets/images/classes/class-jump.png",
+      "prompt": "Photorealistic adult Brazilian woman leading a mini-trampoline class with two classmates, authentic group energy, dark studio and restrained red light."
+    },
+    {
+      "modality": "RitBox",
+      "file": "assets/images/classes/class-ritbox.png",
+      "prompt": "Photorealistic adult Brazilian man performing a boxing-fitness jab with plain red gloves and classmates behind him, safe training context and cinematic dark-red gym lighting."
+    },
+    {
+      "modality": "FitDance",
+      "file": "assets/images/classes/class-fitdance.png",
+      "prompt": "Photorealistic adult Brazilian woman leading a contemporary dance-fitness move with four diverse classmates, candid energy, black studio and restrained red LEDs."
+    },
+    {
+      "modality": "Funcional",
+      "file": "assets/images/classes/class-funcional.png",
+      "prompt": "Photorealistic adult Brazilian man using anchored battle ropes with correct posture while classmates train near kettlebells, dark functional area and red practical lighting."
+    },
+    {
+      "modality": "ABS",
+      "file": "assets/images/classes/class-abs.png",
+      "prompt": "Photorealistic adult Brazilian woman performing a controlled dead-bug core exercise on a mat with trainer and classmates behind, safe form and dark-red studio treatment."
+    },
+    {
+      "modality": "Muay Thai",
+      "file": "assets/images/classes/class-muay-thai.png",
+      "prompt": "Photorealistic adult Brazilian woman executing a controlled knee strike into Thai pads held by a trainer, respectful class environment, no injury, dark gym and red LEDs."
+    }
+  ]
+}

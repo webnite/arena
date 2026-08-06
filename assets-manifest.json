@@ -1,0 +1,171 @@
+{
+  "source": "https://arenatraining.com.br/",
+  "retrievedAt": "2026-08-06",
+  "policy": "Files are stored locally so the reconstruction does not hotlink the official website.",
+  "links": {
+    "home": "https://arenatraining.com.br/",
+    "plans": "https://arenatraining.com.br/#planos",
+    "about": "https://arenatraining.com.br/#sobre-nos",
+    "classes": "https://arenatraining.com.br/#aulas-coletivas",
+    "contact": "https://arenatraining.com.br/#contato",
+    "planRedCheckout": "https://vendas.online.sistemapacto.com.br/checkout?un=1&k=c42bd5ee497c50012dd346bd7b765724&pl=24",
+    "planRedCheckoutValidation": "Validated 2026-08-06: active checkout for plano red training; R$ 9,90 initial charge and R$ 114,90 monthly fee.",
+    "planDuploWhatsApp": "https://api.whatsapp.com/send?phone=556392877862&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20duplo.",
+    "instagram": "https://www.instagram.com/arenatraining/",
+    "facebook": "https://www.facebook.com/ArenaTraining/",
+    "youtube": "https://www.youtube.com/channel/UCIOT25R7jls9adhE4sAhAxQ",
+    "privacy": "https://arenatraining.com.br/politica-de-privacidade"
+  },
+  "assets": [
+    {
+      "local": "assets/images/brand-mark.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/cropped-cropped-download-1-1-1.png",
+      "role": "header brand mark"
+    },
+    {
+      "local": "assets/images/logo-arena-2022.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/04/Logo-2.png",
+      "role": "legacy full logo"
+    },
+    {
+      "local": "assets/images/logo-arena-profile.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2025/10/Logo-Arena-Perfil-02-1-1-1024x1024.png",
+      "role": "current full brand lockup"
+    },
+    {
+      "local": "assets/images/arena-photo-1949.jpg",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2025/10/siga-meu-instagram-ruivozoom-1949-scaled.jpg",
+      "role": "main gym floor and class crops"
+    },
+    {
+      "local": "assets/images/arena-photo-1999.jpg",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2025/10/siga-meu-instagram-ruivozoom-1999-scaled.jpg",
+      "role": "hero athlete and spinning class"
+    },
+    {
+      "local": "assets/images/arena-photo-2181.jpg",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2025/10/siga-meu-instagram-ruivozoom-2181-scaled.jpg",
+      "role": "building exterior and gallery crop"
+    },
+    {
+      "local": "assets/images/app-phone.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/04/smartphone-1-1.png",
+      "role": "app device mockup"
+    },
+    {
+      "local": "assets/images/icon-dumbbell-outline.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/dumbbell-1-1.png",
+      "role": "musculation icon"
+    },
+    {
+      "local": "assets/images/icon-dumbbell.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/dumbbell-2.png",
+      "role": "equipment icon"
+    },
+    {
+      "local": "assets/images/icon-karate.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/karate-1-1.png",
+      "role": "martial arts icon"
+    },
+    {
+      "local": "assets/images/icon-dance.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/party-people-1.png",
+      "role": "dance icon"
+    },
+    {
+      "local": "assets/images/icon-cardio-outline.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/pulmoes-1-1.png",
+      "role": "cardio icon"
+    },
+    {
+      "local": "assets/images/icon-cardio.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/pulmoes-2.png",
+      "role": "fitness icon"
+    },
+    {
+      "local": "assets/images/icon-yoga.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2023/08/pose-de-ioga.png",
+      "role": "mobility icon"
+    },
+    {
+      "local": "assets/images/classes/class-musculacao.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic Musculação livre modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-spinning.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic Spinning modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-gap.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic GAP modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-jump.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic Jump modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-ritbox.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic RitBox modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-fitdance.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic FitDance modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-funcional.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic Funcional modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-abs.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic ABS modality card photography"
+    },
+    {
+      "local": "assets/images/classes/class-muay-thai.png",
+      "source": "OpenAI built-in image generation",
+      "role": "realistic Muay Thai modality card photography"
+    },
+    {
+      "local": "assets/images/plan-black.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2025/11/arena-site-1-BLACK.png",
+      "role": "official black plan artwork"
+    },
+    {
+      "local": "assets/images/plan-red-2.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2026/01/PLANO-RED-SITE-2-1.png",
+      "role": "official mobile red plan artwork"
+    },
+    {
+      "local": "assets/images/plan-red-3.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2026/01/PLANO-RED-SITE-3-1.png",
+      "role": "official desktop red plan artwork"
+    },
+    {
+      "local": "assets/images/plan-duplo.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2026/01/PLANOS-DUPLO-SITE-1-1.png",
+      "role": "official duo plan artwork"
+    },
+    {
+      "local": "assets/images/logo-mais-um.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2023/04/logo-mais1-1.png",
+      "role": "social project mark"
+    },
+    {
+      "local": "assets/images/legacy-mark.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/454535.png",
+      "role": "legacy decorative mark"
+    },
+    {
+      "local": "assets/images/brand-logo-legacy.png",
+      "source": "https://arenatraining.com.br/wp-content/uploads/2022/03/cropped-download-1-1-1.png",
+      "role": "transparent legacy favicon artifact"
+    }
+  ]
+}

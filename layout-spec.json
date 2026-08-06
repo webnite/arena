@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "name": "Arena Training landing page reconstruction",
+    "sourceImage": "layout-arena (1).png",
+    "sourceCanvas": {
+      "width": 1004,
+      "height": 1567,
+      "dpi": 96,
+      "aspectRatio": 0.6407
+    },
+    "coordinateSystem": "Pixels measured against the 1004 x 1567 reference. Percentages are preferred in implementation.",
+    "visualIntent": "Premium urban gym landing page, performance-driven, cinematic, high contrast and conversion focused."
+  },
+  "designTokens": {
+    "colors": {
+      "black": "#030303",
+      "blackRaised": "#0b0b0b",
+      "surfaceDark": "#111111",
+      "surfaceCard": "#151515",
+      "white": "#ffffff",
+      "offWhite": "#f5f5f3",
+      "textMutedDark": "#b7b7b7",
+      "textMutedLight": "#4e4e4e",
+      "lineDark": "#2a2a2a",
+      "lineLight": "#b7b7b7",
+      "red": "#e01b22",
+      "redBright": "#ef1d24",
+      "redDeep": "#ba1117",
+      "success": "#e51e25"
+    },
+    "typography": {
+      "display": {
+        "family": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+        "weight": 800,
+        "case": "uppercase",
+        "letterSpacing": "0.02em",
+        "lineHeight": 0.94
+      },
+      "heading": {
+        "family": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+        "weight": 800,
+        "case": "uppercase",
+        "letterSpacing": "0.015em",
+        "lineHeight": 1.0
+      },
+      "body": {
+        "family": "Inter, Arial, sans-serif",
+        "weight": 400,
+        "lineHeight": 1.55
+      },
+      "label": {
+        "family": "Inter, Arial, sans-serif",
+        "weight": 700,
+        "case": "uppercase",
+        "letterSpacing": "0.01em"
+      }
+    },
+    "spacing": {
+      "base": 4,
+      "sectionInlineDesktop": 58,
+      "sectionInlineTablet": 32,
+      "sectionInlineMobile": 20,
+      "sectionBlockDesktop": 38,
+      "contentMaxWidth": 890,
+      "gridGap": 12
+    },
+    "radii": {
+      "button": 4,
+      "card": 7,
+      "largeMedia": 9,
+      "pill": 4,
+      "circle": 999
+    },
+    "borders": {
+      "darkCard": "1px solid #2d2d2d",
+      "lightCard": "1px solid #a8a8a8",
+      "redOutline": "1px solid #e01b22"
+    },
+    "shadows": {
+      "floatingCard": "0 8px 22px rgba(0,0,0,.48), inset 0 0 0 1px rgba(255,255,255,.08)",
+      "media": "0 2px 8px rgba(0,0,0,.12)",
+      "button": "0 5px 14px rgba(224,27,34,.20)"
+    },
+    "motion": {
+      "durationFast": "160ms",
+      "durationNormal": "260ms",
+      "easing": "cubic-bezier(.2,.8,.2,1)",
+      "reducedMotion": "Disable image scale and smooth scroll when prefers-reduced-motion is enabled."
+    }
+  },
+  "globalLayout": {
+    "desktopReferenceWidth": 1004,
+    "contentWidth": 888,
+    "contentLeft": 58,
+    "contentRight": 58,
+    "grid": "12 columns",
+    "headerBehavior": "Absolute over hero on first load; becomes compact, fixed and translucent after scrolling.",
+    "sectionOrder": [
+      "hero",
+      "benefits",
+      "about",
+      "structure",
+      "legacy",
+      "social-project",
+      "plans",
+      "classes",
+      "app",
+      "reviews",
+      "contact",
+      "footer"
+    ]
+  },
+  "components": {
+    "eyebrow": {
+      "layout": "Inline flex, text followed by a 16px horizontal rule",
+      "fontSize": 11,
+      "color": "red",
+      "marginBottom": 16
+    },
+    "primaryButton": {
+      "height": 32,
+      "paddingInline": 20,
+      "background": "red",
+      "foreground": "white",
+      "fontSize": 10,
+      "fontWeight": 800,
+      "icon": "right arrow when the action navigates deeper",
+      "hover": "Lift 2px, brighten red and expose a stronger shadow",
+      "focus": "2px white/red offset focus ring"
+    },
+    "outlineButton": {
+      "height": 32,
+      "background": "transparent",
+      "border": "contextual black or red",
+      "hover": "Fill with border color and invert text"
+    },
+    "imageTreatment": {
+      "fit": "cover",
+      "position": "center",
+      "darkAreas": "cinematic black overlay with red practical lighting",
+      "hover": "Subtle 1.025 scale only on interactive cards"
+    },
+    "sectionTitle": {
+      "desktopSize": 31,
+      "mobileSize": 36,
+      "colorRule": "Primary line inherits section foreground; highlighted phrase uses red."
+    }
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "bounds": { "x": 0, "y": 0, "width": 1004, "height": 513 },
+      "theme": "dark",
+      "background": {
+        "type": "full-bleed image",
+        "assetRole": "hero-athlete-battle-ropes",
+        "position": "center 35%",
+        "overlay": "linear-gradient(90deg, rgba(0,0,0,.98) 0%, rgba(0,0,0,.72) 34%, rgba(0,0,0,.08) 69%, rgba(0,0,0,.25) 100%), linear-gradient(0deg, rgba(0,0,0,.35), transparent 45%)"
+      },
+      "header": {
+        "bounds": { "x": 52, "y": 21, "width": 905, "height": 33 },
+        "logo": { "width": 108, "height": 31, "alignment": "left" },
+        "navigation": {
+          "alignment": "center",
+          "items": ["Planos", "A academia", "Aulas", "App", "Contato"],
+          "gap": 40,
+          "fontSize": 10
+        },
+        "cta": { "label": "Quero treinar", "width": 116, "height": 31, "alignment": "right" }
+      },
+      "copyColumn": {
+        "bounds": { "x": 58, "y": 115, "width": 350, "height": 305 },
+        "eyebrow": "Arena Training",
+        "headline": ["Seu melhor", "treino,", "todos os dias."],
+        "headlineSize": 46,
+        "highlightLine": 3,
+        "body": ["Mais que uma academia.", "Um espaço para transformar", "corpo, mente e rotina."],
+        "bodySize": 14,
+        "cta": "Conheça nossos planos"
+      },
+      "priceCallout": {
+        "bounds": { "x": 776, "y": 200, "width": 187, "height": 215 },
+        "surface": "rgba(16,16,16,.92)",
+        "border": "1px solid #363636",
+        "radius": 11,
+        "shadow": "floatingCard",
+        "intro": "Planos a partir de",
+        "price": { "currency": "R$", "integer": "9", "decimal": ",90*", "period": "/dia" },
+        "cta": "Matrícula grátis",
+        "footnote": "*Consulte condições."
+      },
+      "benefits": {
+        "bounds": { "x": 57, "y": 453, "width": 429, "height": 43 },
+        "columns": 3,
+        "items": [
+          { "icon": "dumbbell", "label": "Equipamentos modernos" },
+          { "icon": "trainer", "label": "Profissionais qualificados" },
+          { "icon": "shield-check", "label": "Ambiente seguro e limpo" }
+        ]
+      },
+      "ux": "Primary conversion is duplicated in header, hero copy and price card. On mobile the content stacks with the price card directly after the headline; benefits become a horizontal scroll or 3-row list."
+    },
+    {
+      "id": "about",
+      "bounds": { "x": 0, "y": 513, "width": 1004, "height": 337 },
+      "theme": "light",
+      "background": "offWhite",
+      "layout": {
+        "columns": "34% copy / 66% asymmetric gallery",
+        "gap": 33,
+        "padding": "37px 60px 33px"
+      },
+      "copyColumn": {
+        "bounds": { "x": 62, "y": 555, "width": 272, "height": 258 },
+        "eyebrow": "Sobre nós",
+        "headline": ["Há mais de 12 anos", "cuidando de vidas"],
+        "body": "Na Arena Training, treino vai além de movimento. É disciplina, motivação e apoio para você alcançar sua melhor versão. Aqui, cada detalhe é pensado para o seu resultado.",
+        "metrics": [
+          { "value": "+12", "label": "Anos" },
+          { "value": "+2K", "label": "Alunos" },
+          { "value": "+20", "label": "Aulas" }
+        ]
+      },
+      "gallery": {
+        "bounds": { "x": 377, "y": 549, "width": 567, "height": 268 },
+        "grid": "3 columns x 2 rows; large image spans first 2 columns and both rows",
+        "gap": 12,
+        "large": { "role": "gym-floor", "width": 333, "height": 268 },
+        "topRight": { "role": "reception", "width": 222, "height": 126 },
+        "bottomRight": { "role": "cardio-area", "width": 222, "height": 130 }
+      },
+      "ux": "Story and credibility metrics precede the facilities gallery. On mobile the large photo is full width, followed by two equal thumbnails."
+    },
+    {
+      "id": "classes",
+      "bounds": { "x": 0, "y": 850, "width": 1004, "height": 269 },
+      "theme": "dark",
+      "background": "black",
+      "layout": {
+        "introWidth": 192,
+        "carouselStartX": 273,
+        "carouselCardWidth": 106,
+        "carouselCardHeight": 194,
+        "gap": 7,
+        "padding": "29px 58px 25px"
+      },
+      "intro": {
+        "eyebrow": "Aulas coletivas",
+        "headline": ["Movimento que", "transforma"],
+        "body": "Variedade de aulas para todos os níveis e objetivos.",
+        "cta": "Ver todas as aulas"
+      },
+      "carousel": {
+        "visibleCards": 6,
+        "navigation": "Circular previous and next buttons at viewport edges; four pagination dots centered below.",
+        "cards": [
+          { "title": "Musculação livre", "icon": "dumbbell", "imageRole": "class-musculation" },
+          { "title": "Spinning indoor", "icon": "bike", "imageRole": "class-spinning" },
+          { "title": "Funcional training", "icon": "kettlebell", "imageRole": "class-functional" },
+          { "title": "Artes marciais", "icon": "fighter", "imageRole": "class-martial-arts" },
+          { "title": "Fitdance", "icon": "dance", "imageRole": "class-fitdance" },
+          { "title": "GAP", "icon": "lower-body", "imageRole": "class-gap" }
+        ],
+        "cardComposition": "Portrait image fills card; bottom 52px uses black gradient; red line icon and 10px white uppercase label sit together at bottom."
+      },
+      "ux": "Cards are keyboard operable and swipeable. On narrow screens the intro remains above a snap-scrolling carousel with 1.25 cards visible."
+    },
+    {
+      "id": "plans",
+      "bounds": { "x": 0, "y": 1119, "width": 1004, "height": 304 },
+      "theme": "light",
+      "background": {
+        "color": "offWhite",
+        "decoration": "red 3px dot matrix, vertically centered at right edge"
+      },
+      "layout": {
+        "introWidth": 245,
+        "cardsStartX": 368,
+        "cardWidth": 238,
+        "cardHeight": 254,
+        "gap": 17,
+        "padding": "30px 60px 20px"
+      },
+      "intro": {
+        "eyebrow": "Planos",
+        "headline": ["Escolha o plano", "ideal para você"],
+        "body": "Opções flexíveis para todos os objetivos. Treine com quem te motiva.",
+        "cta": "Ver comparativo"
+      },
+      "plans": [
+        {
+          "name": "Plano Red",
+          "badge": "Mais escolhido",
+          "price": { "intro": "A partir de", "currency": "R$", "integer": "9", "decimal": ",90*", "period": "/dia" },
+          "features": ["Musculação e cardio", "Aulas coletivas", "Sala de jogos", "Armários completos"],
+          "cta": "Quero este plano",
+          "style": "red filled CTA"
+        },
+        {
+          "name": "Plano Duplo",
+          "badge": null,
+          "price": { "intro": "A partir de", "currency": "R$", "integer": "199", "decimal": ",90", "period": "/mês" },
+          "features": ["Tudo do plano RED", "Convide quem quiser", "Sem custo adicional"],
+          "cta": "Quero este plano",
+          "style": "red outlined CTA"
+        }
+      ],
+      "ux": "The recommended plan is visually elevated by a centered badge and filled CTA. On mobile cards stack with the recommended plan first."
+    },
+    {
+      "id": "app",
+      "bounds": { "x": 0, "y": 1423, "width": 1004, "height": 144 },
+      "theme": "dark",
+      "background": "subtle black radial gradient",
+      "layout": {
+        "headline": { "x": 59, "y": 1440, "width": 200 },
+        "phone": { "x": 280, "y": 1425, "width": 145, "height": 230, "rotation": 9 },
+        "features": { "x": 472, "y": 1445, "width": 190 },
+        "stores": { "x": 710, "y": 1462, "width": 108 }
+      },
+      "copy": {
+        "eyebrow": "App Arena Training",
+        "headline": ["Sua rotina", "na palma", "da sua mão"],
+        "features": [
+          "Histórico e acompanhamento",
+          "Agendamento de aulas",
+          "Avaliações físicas",
+          "Renovação de planos",
+          "Dicas e receitas"
+        ]
+      },
+      "storeBadges": ["Google Play", "App Store"],
+      "ux": "Store badges use direct external links and include accessible labels. The cropped desktop phone becomes a complete centered mockup on mobile."
+    }
+  ],
+  "responsive": {
+    "desktop": {
+      "minWidth": 1024,
+      "contentMaxWidth": 1180,
+      "notes": "Preserve the reference proportions while allowing additional breathing room on wider screens. Hero minimum height 700px."
+    },
+    "tablet": {
+      "range": "768-1023",
+      "notes": "Collapse header navigation behind a menu button; hero price card stays to the right when space permits; about uses 40/60 columns; show 3.2 class cards."
+    },
+    "mobile": {
+      "maxWidth": 767,
+      "notes": "All main sections become a single column. Hero height becomes auto, navigation is a modal drawer, class cards use horizontal scroll snap, plan cards stack, app content centers.",
+      "minimumTapTarget": 44,
+      "baseBodySize": 16
+    }
+  },
+  "accessibility": {
+    "landmarks": ["header", "nav", "main", "section", "footer"],
+    "headingOrder": "One h1 in hero; each following section starts with h2; cards use h3.",
+    "contrast": "White on black and black on off-white exceed WCAG AA. Red is not used alone to communicate meaning.",
+    "images": "Decorative images use empty alt; facility and class images have concise descriptive alt text.",
+    "controls": "All links and buttons expose visible focus, 44px mobile hit areas and descriptive accessible names.",
+    "carousel": "Previous/next controls, scroll snap fallback, aria-label on region and aria-current on pagination."
+  },
+  "conversionFlow": {
+    "primaryGoal": "Start a membership inquiry",
+    "secondaryGoals": ["View plans", "Review classes", "Contact the gym", "Download the app"],
+    "ctaHierarchy": [
+      "Hero/header: Quero treinar",
+      "Hero: Conheça nossos planos",
+      "Price callout: Matrícula grátis",
+      "Plan cards: Quero este plano",
+      "App store badges"
+    ],
+    "trustSignals": ["12+ years", "2K+ students", "20+ classes", "modern equipment", "qualified professionals", "safe environment"]
+  },
+  "implementationNotes": {
+    "strategy": "Semantic static HTML, CSS custom properties, lightweight vanilla JavaScript and locally stored official-site assets.",
+    "imagePolicy": "Use official Arena Training assets when available; preserve aspect ratio with object-fit: cover; do not hotlink.",
+    "linkPolicy": "Use links discovered on arenatraining.com.br for plans, contact, class anchors and app badges; external links open safely in a new tab.",
+    "performance": "Preload logo and hero, lazy-load offscreen photos, explicit width/height, no framework dependency."
+  },
+  "modernRevision": {
+    "version": 8,
+    "updatedAt": "2026-08-06",
+    "direction": "High-fidelity, component-matched reconstruction of the Gymix page hierarchy for Arena Training: the same visual sequence, proportions, component families and responsive behavior are recreated with original HTML/CSS/JavaScript, official Arena imagery, Arena copy and the black/red brand system.",
+    "referencePatterns": [
+      "Full-height photographic hero with dominant copy anchored over the image",
+      "Primary CTA paired with a circular directional icon",
+      "Alternating light and dark editorial sections with large vertical spacing",
+      "Asymmetric photo grids instead of repeated equal-sized cards",
+      "High-contrast pricing cards with imagery integrated into the card surface"
+    ],
+    "exactComponentMap": {
+      "hero": "Full-viewport photo, overlay navigation, promotional capsule, oversized three-line heading, capsule CTA and proof row.",
+      "about": "Centered manifesto followed by small portrait, experience metric/copy column and large portrait.",
+      "services": "Dark asymmetric masonry of service cards with mixed compact, tall, wide and photographic tiles.",
+      "whyChoose": "Large image paired with editorial copy, oversized metrics and a capsule CTA.",
+      "pricing": "Two high-contrast split cards with integrated photography, price, features and directional CTA.",
+      "team": "Three tall photographic cards with colored lower-third labels.",
+      "testimonials": "Centered heading and mixed photo/quote masonry with accent and dark quote cards.",
+      "contact": "Large contact photograph with overlaid information cards paired with a two-column booking form.",
+      "finalCta": "Centered dark photographic panel with eyebrow, large headline and two actions."
+    },
+    "contentCoverage": [
+      "Hero and primary benefits",
+      "Arena Training history",
+      "Complete facility amenities",
+      "12-year legacy",
+      "Projeto +1 sem fome",
+      "Membership plans",
+      "Nine class modalities with schedules",
+      "Training app",
+      "Google testimonials",
+      "Contact, address, opening hours and social links"
+    ],
+    "classScheduleModal": {
+      "trigger": "Every modality card is a native button with aria-haspopup=dialog.",
+      "surface": "Native HTML dialog with a dynamic title, description, schedule groups, confirmation CTA and backdrop close.",
+      "modalities": ["Musculacao livre", "Spinning", "GAP", "Jump", "RitBox", "Fitdance", "Funcional Training", "ABS", "Muay Thai"],
+      "accessibility": "Focus moves to the close button, Escape closes the dialog and focus returns to the triggering card."
+    },
+    "responsiveBehavior": {
+      "desktop": "1180px content shell, four-column amenities and modality grid, two-column editorial sections.",
+      "tablet": "Two-column grids, mobile navigation, stacked editorial sections.",
+      "mobile": "Full-height photographic hero with its primary plan CTA above the fold; single-column sections and class cards; full-width modal actions; scrollable modal body and 44px minimum controls."
+    },
+    "appShowcase": {
+      "strategy": "The low-resolution third-party phone screenshot was replaced by a code-native Arena product mockup inside a realistic device frame.",
+      "featuresShown": ["Weekly training goal", "Next workout", "Class scheduling", "Activity streak"],
+      "background": "Official Arena gym photography with black and red grading.",
+      "accessibility": "The mockup is illustrative and hidden from assistive technology; the adjacent copy contains the actual product information and link."
+    },
+    "planCheckoutValidation": {
+      "red": "Validated on the current Sistema Pacto domain with plan id 24. Checkout identifies plano red training, charges R$ 9,90 initially and displays a R$ 114,90 monthly fee.",
+      "duplo": "The official Arena source does not publish a self-service checkout for Plano Duplo. Its verified conversion path is the Arena Training WhatsApp request flow.",
+      "contact": "The lead form was removed; contact now uses direct WhatsApp and telephone actions."
+    },
+    "heroOffer": {
+      "desktop": "A bordered black offer panel floats on the right side of the photographic hero, with an oversized red R$ 9,90 initial charge, recurring fee, two benefits and a checkout CTA.",
+      "mobile": "The headline scale is reduced and the offer becomes a 115px compact full-width strip at the bottom of the 760px hero, while the primary plans CTA remains visible with clear separation above it.",
+      "pricingAccuracy": "R$ 9,90 is labeled as the first charge; R$ 114,90 is labeled as the monthly fee."
+    },
+    "planCardRevision": {
+      "imagery": "No images are used in either membership card.",
+      "red": "Oferta Black; Plano Red; modern environment, advanced equipment and bonus discount on personalized training; R$ 9,90 in the first month; limited-time enrollment CTA.",
+      "duplo": "Plano Duplo; right to bring one additional person for 90 days at no cost; R$ 199,80; enrollment CTA through WhatsApp.",
+      "visual": "Gymix-inspired horizontal pricing panels: full-width stacked cards, restrained price hierarchy, pill CTA with circular arrow, divider and feature grid. Plano Red uses a dark surface and Plano Duplo uses the Arena red accent. No photography.",
+      "desktop": "One 1169px-wide card per row; measured heights of 431px for Red and 408px for Duplo at a 1280px viewport.",
+      "mobile": "Single-column card internals with compact price, full-width CTA and one-column feature list; validated at 390px and 360px without horizontal overflow."
+    },
+    "mobileHeroRevision": {
+      "height": "760px at 560px and below",
+      "headline": "Reduced to a 36-40px responsive range.",
+      "offer": "Compact 115px two-column strip at the bottom of the hero; price and recurring fee on the left, 142px CTA on the right; top is explicitly reset to auto so the panel cannot stretch vertically.",
+      "visibleOnMobile": ["Hero body copy", "Primary plans CTA"],
+      "removedOnMobile": ["Secondary modalities link", "Proof metrics", "Offer feature list", "Offer footnote"],
+      "qaViewports": ["390x844", "360x800"]
+    },
+    "classPhotography": {
+      "generator": "OpenAI built-in image generation",
+      "strategy": "One generation call per modality for distinct subject matter and consistent art direction.",
+      "modalities": ["Musculação livre", "Spinning", "GAP", "Jump", "RitBox", "FitDance", "Funcional", "ABS", "Muay Thai"],
+      "format": "1122x1402 PNG, vertical 4:5-style composition with darker lower band for interface copy.",
+      "responsiveCrop": "Per-modality object-position values preserve the primary movement on desktop and mobile cards."
+    }
+  }
+}
