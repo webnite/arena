@@ -4392,4 +4392,8 @@ body {
   .about-gallery + .about-showcase {
     margin-top: 58px;
   }
+
+  .about-showcase .about-portrait--small {
+    display: none;
+  }
 }
