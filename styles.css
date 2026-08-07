@@ -410,7 +410,7 @@ ul {
   position: absolute;
   inset: 0 0 0 auto;
   width: min(72%, 1060px);
-  background: url("assets/images/arena-photo-1999.jpg") 56% 43% / cover no-repeat;
+  background: url("assets/images/editorial/hero-spinning.jpg") 56% 43% / cover no-repeat;
   filter: saturate(.78) contrast(1.08) brightness(.56);
   transform: scale(1.01);
 }
