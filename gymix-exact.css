@@ -4360,6 +4360,7 @@ body {
 @media (max-width: 560px) {
   .about-gallery {
     width: calc(100% + var(--gutter));
+    min-height: 360px;
     grid-template-columns: none;
     grid-template-rows: 360px;
     grid-auto-flow: column;
@@ -4390,10 +4391,14 @@ body {
   }
 
   .about-gallery + .about-showcase {
-    margin-top: 58px;
+    margin-top: 32px;
   }
 
   .about-showcase .about-portrait--small {
     display: none;
+  }
+
+  .about-story > p:first-of-type {
+    margin-top: 0;
   }
 }
