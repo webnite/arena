@@ -72,7 +72,7 @@
               <li>Aulas coletivas incluídas</li>
               <li>Aplicativo de treino</li>
             </ul>
-            <a class="button button--light button--arrow" href="https://vendas.online.sistemapacto.com.br/checkout?un=1&amp;k=c42bd5ee497c50012dd346bd7b765724&amp;pl=24" target="_blank" rel="noopener">Garantir minha vaga <span aria-hidden="true">↗</span></a>
+            <a class="button button--light button--arrow" href="https://vendas.online.sistemapacto.com.br/checkout?un=1&amp;k=c42bd5ee497c50012dd346bd7b765724&amp;pl=24" target="_blank" rel="noopener" data-plan="red">Garantir minha vaga <span aria-hidden="true">↗</span></a>
             <small>Primeira cobrança · checkout oficial</small>
           </aside>
 
@@ -222,7 +222,7 @@
                   <p>Depois <strong>R$ 118,90</strong> por mês</p>
                 </div>
 
-                <a class="plan-card__cta" href="https://vendas.online.sistemapacto.com.br/checkout?un=1&amp;k=c42bd5ee497c50012dd346bd7b765724&amp;pl=24" target="_blank" rel="noopener">
+                <a class="plan-card__cta" href="https://vendas.online.sistemapacto.com.br/checkout?un=1&amp;k=c42bd5ee497c50012dd346bd7b765724&amp;pl=24" target="_blank" rel="noopener" data-plan="red">
                   <span>Matricule-se agora</span><i aria-hidden="true">↗</i>
                 </a>
 
@@ -251,7 +251,7 @@
                   <div><small>R$</small><strong>209</strong><sup>,90</sup></div>
                 </div>
 
-                <a class="plan-card__cta" href="https://api.whatsapp.com/send?phone=556392877862&amp;text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20duplo." target="_blank" rel="noopener">
+                <a class="plan-card__cta" href="https://api.whatsapp.com/send?phone=556392877862&amp;text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20duplo." target="_blank" rel="noopener" data-plan="duplo">
                   <span>Quero o Plano Duplo</span><i aria-hidden="true">↗</i>
                 </a>
 
@@ -460,5 +460,36 @@
         </footer>
       </div>
     </dialog>
+    <dialog class="schedule-modal plan-modal" data-plan-modal aria-labelledby="plan-modal-title">
+      <div class="modal-panel">
+        <div class="modal-accent" aria-hidden="true"></div>
+        <button class="modal-close" type="button" aria-label="Fechar" data-plan-close>×</button>
+        <header class="modal-header">
+          <p class="eyebrow"><span></span>Falta pouco</p>
+          <div class="modal-title-row"><div><h2 id="plan-modal-title" data-plan-title>Plano Red</h2><p>Deixe seu WhatsApp e seu objetivo para continuar.</p></div><span class="modal-icon" aria-hidden="true" data-plan-icon>R</span></div>
+        </header>
+        <form class="plan-form" data-atlas-intake="arena-training/site_planos" data-plan-form>
+          <label class="plan-field">
+            <span>WhatsApp</span>
+            <input class="plan-input" type="tel" name="whatsapp" data-atlas-phone required>
+          </label>
+          <label class="plan-field">
+            <span>Seu objetivo</span>
+            <select class="plan-input" name="objetivo" required>
+              <option value="">Selecione</option>
+              <option value="lose_weight">Emagrecer</option>
+              <option value="gain_muscle">Ganhar massa</option>
+              <option value="health">Saúde</option>
+              <option value="back_to_training">Voltar a treinar</option>
+              <option value="fitness">Condicionamento</option>
+            </select>
+          </label>
+          <input type="hidden" name="plano" value="red" data-plan-value>
+          <p class="plan-error" data-atlas-error role="alert" hidden></p>
+          <button class="button button--arrow plan-submit" type="submit"><b data-plan-cta>Continuar para o pagamento</b><span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </dialog>
+    <script src="https://forms.atlasagents.com.br/in.v1.js" async></script>
   </body>
 </html>

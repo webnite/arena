@@ -280,6 +280,66 @@
 
   modal?.addEventListener("close", cleanupModal);
 
+  // Plans: the button opens the form of the plan; once it is sent the person goes on to the link of the plan (checkout or WhatsApp).
+  // Without JavaScript the buttons are plain links, as before.
+  const planModal = document.querySelector("[data-plan-modal]");
+  const planForm = planModal?.querySelector("[data-plan-form]");
+  const plans = {
+    red: { title: "Plano Red", icon: "R", cta: "Continuar para o pagamento" },
+    duplo: { title: "Plano Duplo", icon: "D", cta: "Continuar no WhatsApp" }
+  };
+  let planHref = "";
+  let planTrigger = null;
+  const planNative = Boolean(planModal && typeof planModal.showModal === "function");
+
+  const openPlan = (key, trigger) => {
+    const plan = plans[key];
+    if (!plan || !planModal || !planForm) return false;
+    planTrigger = trigger;
+    planHref = trigger.getAttribute("href") || "";
+    planModal.querySelector("[data-plan-title]").textContent = plan.title;
+    planModal.querySelector("[data-plan-icon]").textContent = plan.icon;
+    planModal.querySelector("[data-plan-cta]").textContent = plan.cta;
+    planModal.querySelector("[data-plan-value]").value = key;
+    planForm.querySelectorAll("[data-atlas-error]").forEach((node) => { node.hidden = true; });
+    document.body.classList.add("modal-open");
+    if (planNative) {
+      planModal.showModal();
+    } else {
+      planModal.setAttribute("open", "");
+      planModal.setAttribute("role", "dialog");
+      planModal.setAttribute("aria-modal", "true");
+      planModal.classList.add("is-fallback-open");
+    }
+    planForm.querySelector('input[type="tel"]')?.focus();
+    return true;
+  };
+
+  const cleanupPlan = () => {
+    document.body.classList.remove("modal-open");
+    planModal?.classList.remove("is-fallback-open");
+    planModal?.removeAttribute("aria-modal");
+    if (!planNative) planModal?.removeAttribute("open");
+    planTrigger?.focus();
+  };
+
+  const closePlan = () => {
+    if (planNative && planModal?.open) planModal.close();
+    else cleanupPlan();
+  };
+
+  document.querySelectorAll("[data-plan]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      if (openPlan(button.dataset.plan, button)) event.preventDefault();
+    });
+  });
+  planModal?.querySelector("[data-plan-close]")?.addEventListener("click", closePlan);
+  planModal?.addEventListener("click", (event) => { if (event.target === planModal) closePlan(); });
+  planModal?.addEventListener("close", cleanupPlan);
+  planForm?.addEventListener("atlas:submitted", () => {
+    if (planHref) window.location.href = planHref;
+  });
+
   const year = document.querySelector("[data-current-year]");
   if (year) year.textContent = new Date().getFullYear();
 })();
